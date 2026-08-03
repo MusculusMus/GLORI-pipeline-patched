@@ -1,6 +1,6 @@
 # Optimized GLORI-tools Pipeline for m6A Calling
 
-A modernized, storage-optimized, and fully patched pipeline for the absolute quantification of m6A RNA modifications (GLORI). 
+A customized and fully patched pipeline for the absolute quantification of m6A RNA modifications (GLORI). 
 
 This repository is a customized fork of the original [GLORI-tools](https://github.com/liucongcas/GLORI-tools). It has been specifically updated to resolve fatal runtime errors in modern computing environments (like Python 3.13+ and STAR 2.7+) and to significantly reduce hard drive space requirements during read preprocessing.
 
