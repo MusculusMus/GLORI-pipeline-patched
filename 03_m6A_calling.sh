@@ -8,7 +8,7 @@
 # --- 1. APPLY CUSTOM PATCHES TO ORIGINAL GLORI SOURCE CODE ---
 # Fixes the fatal '--outSAMattributes All' bug in newer versions of STAR
 echo "Patching GLORI-tools to support STAR 2.7+..."
-find ./GLORI-tools-1.0.0/ -type f -name "*.py" -exec sed -i 's/--outSAMattributes All/--outSAMattributes NH HI AS nM NM MD/g' {} +
+find ./GLORI-tools-shuai/ -type f -name "*.py" -exec sed -i 's/--outSAMattributes All/--outSAMattributes NH HI AS nM NM MD/g' {} +
 
 # Note for users running Python 3.13+:
 # You MUST manually change line 120 in ./pipelines/m6A_caller.py
@@ -29,7 +29,7 @@ baseanno=${annodir}/GCF_000001635.27_GRCm39_genomic.gtf_change2Ens.tbl2.noredund
 anno=${annodir}/GCF_000001635.27_GRCm39_genomic.gtf_change2Ens.tbl2
 
 outputdir=./GLORI_results
-tooldir=./GLORI-tools-1.0.0
+tooldir=./GLORI-tools-shuai
 
 mkdir -p $outputdir
 
