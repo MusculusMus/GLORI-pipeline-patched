@@ -13,7 +13,7 @@ OUTPUT_DIR="./FASTQ_file/cleaned_reads"
 
 mkdir -p $OUTPUT_DIR
 
-for file in ./FASTQ_file/*.fastq.gz; do
+for file in ./FASTQ_file/*.fq.gz; do
     
     # Extract the base name (e.g., cuts "SRR31477255" from "SRR31477255.fastq.gz")
     filename=$(basename "$file")
