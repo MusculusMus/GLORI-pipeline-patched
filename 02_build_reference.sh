@@ -32,7 +32,7 @@ echo "2. Getting Reference for Reads Alignment"
 echo "========================================"
 
 # Patch STAR memory limit into the python script to prevent workstation crashes
-sed -i 's/--runMode genomeGenerate/--runMode genomeGenerate --limitGenomeGenerateRAM 34359738368/g' ../${TOOL_DIR}/pipelines/build_genome_index.py
+sed -i 's/--runMode genomeGenerate/--runMode genomeGenerate --limitGenomeGenerateRAM 51539607552/g' ../${TOOL_DIR}/pipelines/build_genome_index.py
 
 # 2.1 Build genome index using STAR (includes A-to-G conversion)
 python ../${TOOL_DIR}/pipelines/build_genome_index.py \
