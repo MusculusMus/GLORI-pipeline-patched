@@ -9,7 +9,7 @@ THREADS=12
 UMI_LEN=9
 MIN_LEN=$((UMI_LEN + 25))
 TRIM_START=$((UMI_LEN + 1))
-OUTPUT_DIR="./cleaned_reads"
+OUTPUT_DIR="./FASTQ_file/cleaned_reads"
 
 mkdir -p $OUTPUT_DIR
 
