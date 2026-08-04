@@ -1,0 +1,4 @@
+GCF_000001635.27_GRCm39_assembly_report.txt
+mm39.fa
+GCF_000001635.27_GRCm39_genomic.gtf
+GCF_000001635.27_GRCm39_rna.fna
