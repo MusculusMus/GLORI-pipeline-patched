@@ -24,8 +24,8 @@ This script handles the raw `.fastq.gz` inputs. It utilizes Trim Galore to remov
 This script builds the necessary mapping indices for both STAR and Bowtie. It is pre-configured for the GRCm39 mouse reference genome and transcriptome.
 * **Note:** Building the A-to-G converted genome index is highly memory-intensive. This script includes a strict RAM cap (`--limitGenomeGenerateRAM 51539607552`) to prevent crashes on standard 64GB/128GB workstations. 
 * **Dependency:** You *must* use Bowtie version 1 (not Bowtie 2) for the transcriptome indices, as the downstream Python scripts hardcode `bowtie` (v1) parameters.
-* Four files for mouse genome and transcriptome from [Genome assembly GRCm39](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001635.27/) and [UCSC GRCm39/mm39](https://hgdownload.soe.ucsc.edu/goldenPath/mm39/bigZips/)
-  `GCF_000001635.27_GRCm39_assembly_report.txt`, `mm39.fa`, `GCF_000001635.27_GRCm39_genomic.gtf`, `GCF_000001635.27_GRCm39_rna.fna`.
+* Four files for mouse genome and transcriptome from [Genome assembly GRCm39](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001635.27/) and [UCSC GRCm39/mm39](https://hgdownload.soe.ucsc.edu/goldenPath/mm39/bigZips/).
+  `GCF_000001635.27_GRCm39_assembly_report.txt`,`GCF_000001635.27_GRCm39_genomic.gtf`, `GCF_000001635.27_GRCm39_rna.fna` and `mm39.fa`.
 
 ### Session 3: m6A Calling (`03_m6A_calling.sh`)
 The core wrapper script that triggers the `run_GLORI.py` pipeline. 
